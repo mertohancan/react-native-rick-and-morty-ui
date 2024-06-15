@@ -12,8 +12,10 @@ const RadioButton = ({
     <TouchableOpacity
       onPress={() => onSelect(value)}
       style={styles.radioButton}
+      testID="radioButton"
     >
       <View
+        testID="radioCircle"
         style={[styles.radioCircle, selected && styles.selectedRadioCircle]}
       />
       <Text style={styles.radioText}>{label}</Text>

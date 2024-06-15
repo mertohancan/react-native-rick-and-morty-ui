@@ -7,7 +7,6 @@ import {
   ImageBackground,
 } from "react-native";
 
-import { calWidth } from "src/constants/constants";
 import { Characters } from "src/types/characters";
 
 type SimpleCardProps = Characters & {
@@ -34,7 +33,7 @@ const SimpleCard = ({
             resizeMode="cover"
             style={{
               ...styles.image,
-              width: direction === "row" ? calWidth(110) : calWidth(150),
+              width: direction === "row" ? 110 : 150,
             }}
             src={image}
             alt={name}
@@ -71,13 +70,13 @@ const styles = StyleSheet.create({
   },
 
   image: {
-    width: calWidth(110),
+    width: 110,
     height: 120,
   },
   title: {
     fontSize: 17,
     fontWeight: "bold",
-    width: calWidth(110),
+    width: 110,
   },
   description: {
     fontSize: 14,

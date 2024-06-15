@@ -1,14 +1,10 @@
 import React from "react";
 import { View, ActivityIndicator, StyleSheet } from "react-native";
-
-interface LoaderProps {
-  size?: "small" | "large";
-  color?: string;
-}
+import { LoaderProps } from "./types";
 
 const Loader = ({ size = "large", color = "#0000ff" }: LoaderProps) => (
   <View style={styles.container}>
-    <ActivityIndicator size={size} color={color} />
+    <ActivityIndicator testID="indicator" size={size} color={color} />
   </View>
 );
 
