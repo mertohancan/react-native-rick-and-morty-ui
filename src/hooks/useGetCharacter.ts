@@ -14,7 +14,6 @@ export const useGetCharacter = ({ id }: { id: number }) => {
         setLoader(true);
         const response = await fetch(`${API_SERVICES.characters}/${id}`);
         const data = await response.json();
-        console.log("data:", data);
         setData(data);
         // Check if character has episodes
         if (data.episode.length > 0) {
