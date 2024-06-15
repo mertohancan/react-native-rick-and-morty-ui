@@ -8,18 +8,15 @@ const Typography = ({ type = "regular", style, children }: TypographyProps) => (
 
 const styles = StyleSheet.create({
   regular: {
-    fontFamily: "Roboto-Regular",
     fontSize: 16,
     color: "#333",
   },
   bold: {
-    fontFamily: "Roboto-Bold",
     fontSize: 18,
     fontWeight: "bold",
     color: "#333",
   },
   italic: {
-    fontFamily: "Roboto-Regular",
     fontSize: 16,
     fontStyle: "italic",
     color: "#333",

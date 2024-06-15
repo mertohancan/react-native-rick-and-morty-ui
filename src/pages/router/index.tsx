@@ -21,13 +21,13 @@ const BottomTabs = () => {
   return (
     <BottomTab.Navigator
       initialRouteName={"Home"}
-      screenOptions={({ route }) => ({
+      screenOptions={() => ({
         headerShown: false,
         tabBarShowLabel: true,
         tabBarActiveTintColor: "tomato",
         tabBarInactiveTintColor: "gray",
         tabBarIconStyle: { display: "none" },
-        tabBarLabelStyle: { fontSize: 18 },
+        tabBarLabelStyle: { fontSize: 18, paddingBottom: 12 },
       })}
     >
       <BottomTab.Screen name={PAGES.HOME} component={Home} />
