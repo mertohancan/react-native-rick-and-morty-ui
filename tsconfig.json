@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "strict": true,
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["/src/*"],
+      "@constants/*": ["/src/constants/*"],
+      "@pages/*": ["/src/pages/*"],
+      "@types/*": ["/src/types/*"], 
+      "@components/*": ["/src/components/*"],
+    },
+    "esModuleInterop": true
+  },
+  "extends": "expo/tsconfig.base",
+
+}
